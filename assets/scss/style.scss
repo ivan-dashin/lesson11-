@@ -1,27 +1,76 @@
-@import 'default';
-@import 'colors';
-@import 'mixin';
+@import "default";
+@import "colors";
+@import "mixin";
 
-    h1{
-        @include font(900)
-    }
-    h4{
-        @include font(700)
-    }
-    p{
-        @include font(400)
-    }
+h1 {
+  @include font(900);
+}
+h4 {
+  @include font(700);
+}
+p {
+  @include font(400);
+}
 
-    .btn.main{
-        @include btn($main);
-        &:hover{
-            @include activeBtn($main);
-        }
-    }
-    .btn.second{
-        @include btn($second);
-        &:hover{
-            @include activeBtn($second);
-        }
-    }
+.btn.main {
+  @include btn($main);
+  &:hover {
+    @include activeBtn($main);
+  }
+}
+.btn.second {
+  @include btn($second);
+  &:hover {
+    @include activeBtn($second);
+  }
+}
+body{
+    background-color: $back;
+}
+.wrapper {
+  width: 90%;
+  margin: 0 auto;
+}
+.container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
   
+}
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 40px 0;
+
+
+  .burger-menu {
+    .line {
+      width: 18px;
+      height: 2px;
+      margin-bottom: 5px;
+      background-color: $back;
+
+      &:last-child {
+        margin: 0;
+      }
+    }
+  }
+
+  .logo {
+    @include font(900);
+    font-size: 24px;
+    text-transform: uppercase;
+    color: $black;
+    transition: 0.4s;
+    &:hover{
+      color:$active;
+      cursor: pointer;
+     }
+  }
+  .container{
+      svg:first-child{ 
+          margin-right: 20px;
+      }
+   } 
+ }

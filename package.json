@@ -1,22 +1,19 @@
 {
-  "name": "geron",
+  "name": "lesson11-",
   "version": "1.0.0",
   "description": "",
   "main": "index.js",
   "scripts": {
     "node-sass": "sass -w assets/scss/:assets/css/"
   },
-  "repository": {
-    "type": "git",
-    "url": "git+https://github.com/Nurullaev1703/geron.git"
-  },
+ 
   "keywords": [],
   "author": "",
   "license": "ISC",
   "bugs": {
-    "url": "https://github.com/Nurullaev1703/geron/issues"
+    "url": "https://github.com/ivan-dashin/lesson11-/issues"
   },
-  "homepage": "https://github.com/Nurullaev1703/geron#readme",
+  "homepage": "https://github.com/ivan-dashin/lesson11-#readme",
   "dependencies": {
     "node-sass": "^8.0.0"
   }

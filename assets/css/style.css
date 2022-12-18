@@ -82,4 +82,50 @@ p {
   cursor: pointer;
 }
 
+body {
+  background-color: #F7F7F7;
+}
+
+.wrapper {
+  width: 90%;
+  margin: 0 auto;
+}
+
+.container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 40px 0;
+}
+header .burger-menu .line {
+  width: 18px;
+  height: 2px;
+  margin-bottom: 5px;
+  background-color: #F7F7F7;
+}
+header .burger-menu .line:last-child {
+  margin: 0;
+}
+header .logo {
+  font-family: "Montserrat", sans-serif;
+  font-weight: 900;
+  font-size: 24px;
+  text-transform: uppercase;
+  color: #000000;
+  transition: 0.4s;
+}
+header .logo:hover {
+  color: #EF5DA8;
+  cursor: pointer;
+}
+header .container svg:first-child {
+  margin-right: 20px;
+}
+
 /*# sourceMappingURL=style.css.map */
