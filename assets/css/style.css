@@ -17,7 +17,7 @@ a {
   padding: 0;
 }
 
-input[type=password] {
+input[type=text] {
   border: none;
   outline: none;
   background-color: transparent;
@@ -26,16 +26,31 @@ input[type=password] {
 h1 {
   font-family: "Montserrat", sans-serif;
   font-weight: 900;
+  font-size: 20px;
+}
+
+h2 {
+  font-family: "Montserrat", sans-serif;
+  font-weight: 900;
+  font-size: 16px;
+}
+
+h3 {
+  font-family: "Montserrat", sans-serif;
+  font-weight: 900;
+  font-size: 14px;
 }
 
 h4 {
   font-family: "Montserrat", sans-serif;
   font-weight: 700;
+  font-size: 12px;
 }
 
 p {
   font-family: "Montserrat", sans-serif;
   font-weight: 400;
+  font-size: 14px;
 }
 
 .btn.main {
@@ -46,6 +61,7 @@ p {
   font-weight: 900;
   padding: 10px 0;
   transition: 0.4s;
+  border-radius: 8px;
 }
 .btn.main:hover {
   width: 100%;
@@ -55,6 +71,7 @@ p {
   font-weight: 900;
   padding: 10px 0;
   transition: 0.4s;
+  border-radius: 8px;
   background-color: #FF3D00;
   color: white;
   cursor: pointer;
@@ -68,6 +85,7 @@ p {
   font-weight: 900;
   padding: 10px 0;
   transition: 0.4s;
+  border-radius: 8px;
 }
 .btn.second:hover {
   width: 100%;
@@ -77,6 +95,7 @@ p {
   font-weight: 900;
   padding: 10px 0;
   transition: 0.4s;
+  border-radius: 8px;
   background-color: #0085FF;
   color: white;
   cursor: pointer;
@@ -95,6 +114,35 @@ body {
   display: flex;
   justify-content: space-between;
   align-items: center;
+}
+
+.cover {
+  position: relative;
+  padding-top: 28%;
+  width: 100%;
+}
+.cover img {
+  position: absolute;
+  top: 0;
+  left: 0;
+  object-fit: cover;
+  width: 100%;
+  height: 100%;
+  border-radius: 8px;
+}
+
+section {
+  margin-bottom: 80px;
+}
+
+input[type=text],
+.select {
+  width: 100%;
+  border: 1px solid #808080;
+  border-radius: 8px;
+  padding: 5px 10px;
+  color: #808080;
+  margin: 0 10px;
 }
 
 header {
@@ -126,6 +174,75 @@ header .logo:hover {
 }
 header .container svg:first-child {
   margin-right: 20px;
+}
+
+.main.container {
+  align-items: stretch;
+}
+.main .cover,
+.main .content {
+  width: 48%;
+  border-radius: 8px;
+}
+.main .content {
+  background-color: #0085ff;
+}
+.main .content p {
+  margin: 36px 55px;
+  font-weight: 900;
+  font-size: 20px;
+  color: white;
+}
+.main .content p:last-child {
+  margin-bottom: 0;
+}
+
+.cards .card {
+  width: 18%;
+  box-shadow: 0px 2px 8px rgba(0, 0, 0, 0.05);
+  border-radius: 8px;
+}
+.cards .card .cover {
+  padding-top: 100%;
+}
+.cards .card .content {
+  padding: 10px;
+}
+.cards .card .content .title {
+  margin-bottom: 14px;
+}
+.cards .card .content .context {
+  font-size: 10px;
+  color: #6a6a6a;
+  margin: 8px 0;
+}
+
+.form-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.form-container form {
+  width: 25%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  border: 1px solid #E3E3E3;
+  border-radius: 8px;
+  padding: 15px 20px 34px;
+}
+.form-container form h1 {
+  margin-bottom: 26px;
+}
+.form-container form input[type=text] {
+  margin-bottom: 13px;
+}
+.form-container form .select {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 26px;
 }
 
 /*# sourceMappingURL=style.css.map */
